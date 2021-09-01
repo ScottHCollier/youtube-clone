@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em 1em;
+    padding: 0.5em 2em;
     box-shadow: 0 2px 5px 0 #33333301;
     position: sticky;
     top: 0;
@@ -36,18 +36,18 @@
     }
 
     .header-input {
-        height: 35px;
-        width: 40%;
+        height: 33px;
+        width: 35%;
         border: 1px solid #333;
 
         > input {
             height: 100%;
             width: 100%;
-            background-color: black;
+            background-color: #111;
             flex: 1;
             border: none;
-            padding-left: 1em;
-            font-size: 0.9rem;
+            padding-left: 0.8em;
+            font-size: 1rem;
             margin-right: 1px;
 
             &:focus {
@@ -59,7 +59,7 @@
         .header-input-button {
             background: #333;
             height: 100%;
-            width: 3em;
+            width: 2.5em;
             color: gray;
             border-left: 1px solid #333;
 
