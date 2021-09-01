@@ -12,6 +12,7 @@
 
         &:hover {
             overflow-y: scroll;
+            padding-right: 0.4em;
         }
 
         &:hover::-webkit-scrollbar {
@@ -41,7 +42,7 @@
             border-top: 1px solid #333;
             border-bottom: 1px solid #333;
             width: calc(100% - 12em);
-            height: 2.6em;
+            height: 2.9em;
             position: fixed;
             top: 2.8em;
             display: flex;
@@ -51,7 +52,7 @@
 
         .video-list {
             position: relative;
-            top: 2.6em;
+            top: 2.9em;
             z-index: -1;
         }
     }

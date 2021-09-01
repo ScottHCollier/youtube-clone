@@ -1,0 +1,58 @@
+.sidebar {
+    padding-top: 0.6em;
+    padding-right: 0.8em;
+
+    .sidebar-item {
+        height: 2em;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+        padding-left: 1.2em;
+
+        &:hover {
+            background-color: #666;
+            cursor: pointer;
+        }
+
+        .sidebar-item-text {
+            padding-left: 1.7em;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+    }
+
+    .nav-list {
+        border-bottom: 1px solid #333;
+        padding-bottom: 0.6em;
+    }
+
+    .history-list {
+        padding-top: 0.6em;
+        border-bottom: 1px solid #333;
+        padding-bottom: 0.6em;
+    }
+
+    .subscriptions-list {
+        padding-top: 0.8em;
+
+        > p {
+            color: #999;
+            padding-left: 1.6em;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    }
+
+    .sidebar-footer {
+        margin-top: 25em;
+
+        > p {
+            padding-left: 2.8em;
+            font-size: 0.9rem;
+        }
+    }
+
+}

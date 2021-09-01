@@ -9,7 +9,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em 2em;
+    padding: 0.5em 1.2em;
+    padding-right: 1.8em;
     box-shadow: 0 2px 5px 0 #33333301;
     position: sticky;
     top: 0;
@@ -37,7 +38,7 @@
 
     .header-input {
         height: 33px;
-        width: 35%;
+        width: 34%;
         border: 1px solid #333;
 
         > input {
