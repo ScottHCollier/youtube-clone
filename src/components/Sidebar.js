@@ -26,12 +26,12 @@ const sidebarHistory = [
 ];
 
 function Sidebar() {
-    let navList = sidebarNav.map((item) => (
-        <SidebarItem icon={item.icon} text={item.text} />
+    let navList = sidebarNav.map((item, index) => (
+        <SidebarItem key={index} icon={item.icon} text={item.text} />
     ));
 
-    let historyList = sidebarHistory.map((item) => (
-        <SidebarItem icon={item.icon} text={item.text} />
+    let historyList = sidebarHistory.map((item, index) => (
+        <SidebarItem key={index} icon={item.icon} text={item.text} />
     ));
 
     return (

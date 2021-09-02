@@ -1,10 +1,11 @@
 import React from "react";
 
 function SidebarItem(props) {
+    const { icon, text } = props;
     return (
         <div className="sidebar-item">
-            {props.icon}
-            <p className="sidebar-item-text">{props.text}</p>
+            {icon}
+            <p className="sidebar-item-text">{text}</p>
         </div>
     );
 }

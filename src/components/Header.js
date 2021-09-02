@@ -5,8 +5,6 @@ import VideoCallOutlinedIcon from "@material-ui/icons/VideoCallOutlined";
 import AppsOutlinedIcon from "@material-ui/icons/AppsOutlined";
 import NotificationsOutlinedIcon from "@material-ui/icons/NotificationsOutlined";
 import Avatar from "@material-ui/core/Avatar";
-// import YouTubeIcon from "@material-ui/icons/YouTube";
-// import { red } from "@material-ui/core/colors";
 
 function Header() {
     return (
