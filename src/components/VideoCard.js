@@ -3,6 +3,7 @@ import Avatar from "@material-ui/core/Avatar";
 
 function VideoCard(props) {
     const {
+        link,
         image,
         title,
         channel,
@@ -14,7 +15,7 @@ function VideoCard(props) {
     } = props;
     return (
         <div className="video-card">
-            <img src={image} alt={imageAlt} />
+            <img src={image} alt={imageAlt} onClick={() => link} />
             <div className="card-text">
                 <Avatar src={channelImage} alt={channelImageAlt} />
                 <div className="card-details">
