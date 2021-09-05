@@ -43,3 +43,18 @@
         }
     }
 }
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    left: 2em;
+    top: 4em;
+    // height: 100%;
+    // width: 100%;
+    position: absolute;
+}

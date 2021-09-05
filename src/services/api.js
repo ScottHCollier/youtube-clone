@@ -11,7 +11,9 @@ const baseParams = {
 
 const videoParams = {
     part: "snippet, statistics",
+    chart: "mostPopular",
     maxResults: 20,
+    regionCode: "GB",
     key: KEY,
 };
 

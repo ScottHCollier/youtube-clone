@@ -1,5 +1,6 @@
 import React from "react";
 import MenuOutlinedIcon from "@material-ui/icons/MenuOutlined";
+import YouTubeLogo from "./YouTubeLogo";
 import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import VideoCallOutlinedIcon from "@material-ui/icons/VideoCallOutlined";
 import AppsOutlinedIcon from "@material-ui/icons/AppsOutlined";
@@ -12,11 +13,7 @@ function Header() {
             <div className="header-left">
                 <MenuOutlinedIcon className="header-icon" />
 
-                <img
-                    className="header-logo header-icon"
-                    src="images/youtube-logo.svg"
-                    alt="YouTube Logo"
-                />
+                <YouTubeLogo />
             </div>
             <div className="header-input">
                 <input type="text" placeholder="Search"></input>

@@ -14,19 +14,21 @@ function VideoCard(props) {
         channelImageAlt,
     } = props;
     return (
-        <div className="video-card">
-            <img src={image} alt={imageAlt} onClick={() => link} />
-            <div className="card-text">
-                <Avatar src={channelImage} alt={channelImageAlt} />
-                <div className="card-details">
-                    <h3>{title}</h3>
-                    <h4>{channel}</h4>
-                    <p>
-                        {views} views • {timeStamp} ago
-                    </p>
+        <a href={link}>
+            <div className="video-card">
+                <img src={image} alt={imageAlt} />
+                <div className="card-text">
+                    <Avatar src={channelImage} alt={channelImageAlt} />
+                    <div className="card-details">
+                        <h3>{title}</h3>
+                        <h4>{channel}</h4>
+                        <p>
+                            {views} views • {timeStamp} ago
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
     );
 }
 

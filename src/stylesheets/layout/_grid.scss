@@ -36,6 +36,7 @@
         display: flex;
         flex-direction: column;
         margin-left: 12em;
+        // z-index: -1;
 
         .link-list {
             background-color: #222222ee;
@@ -49,6 +50,7 @@
             justify-content: flex-start;
             align-items: center;
             overflow: hidden;
+            z-index: 3;
 
             ul {
                 display: flex;
@@ -86,6 +88,7 @@
             flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
+            z-index: 1;
         }
     }
 }
