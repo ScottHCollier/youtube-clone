@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import VideoCard from "./VideoCard";
 import { fetchVideo } from "../services/api";
+import { abbreviateNumber, timeSince } from "../services/timeStamps";
 
 class RecommendedVideos extends Component {
     constructor(props) {
@@ -14,13 +15,21 @@ class RecommendedVideos extends Component {
         fetchVideo()
             .then((response) => {
                 response.items.map((item) => {
+                    let formattedViews = abbreviateNumber(
+                        item.statistics.viewCount
+                    );
+
+                    let formattedTimeSince = timeSince(
+                        item.snippet.publishedAt
+                    );
+
                     let video = {
                         link: `https://www.youtube.com/watch?v=${item.id}`,
                         image: item.snippet.thumbnails.medium.url,
                         title: item.snippet.title,
                         channel: item.snippet.channelTitle,
-                        views: item.statistics.viewCount,
-                        timeStamp: item.snippet.publishedAt,
+                        views: formattedViews,
+                        timeStamp: formattedTimeSince,
                         channelImage: "images/pug.png",
                         channelImageAlt: "Pug",
                         imageAlt: "Poodle",
